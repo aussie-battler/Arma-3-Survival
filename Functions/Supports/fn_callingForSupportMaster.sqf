@@ -333,5 +333,7 @@ if (CHECK_SUPPORT_CLASS(RECON_UAV_CLASS)) exitWith {
 	Extra Life
 ---------------------------------------------------------------------------- */
 if (CHECK_SUPPORT_CLASS(EXTRA_LIFE_CLASS)) exitWith {
-	[BLUFOR, 1] call BIS_fnc_respawnTickets;
+	    private _remainingTickets = [BLUFOR,1] call BIS_fnc_respawnTickets;
+    missionNamespace setVariable ["BLWK_numRespawnTickets",_remainingTickets,true];
+			hint "Extra Life added";
 	};
