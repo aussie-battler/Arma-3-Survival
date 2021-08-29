@@ -329,3 +329,9 @@ if (CHECK_SUPPORT_CLASS(RECON_UAV_CLASS)) exitWith {
 		hint "Recon UAV is already active";
 	};
 };
+/* ----------------------------------------------------------------------------
+	Extra Life
+---------------------------------------------------------------------------- */
+if (CHECK_SUPPORT_CLASS(EXTRA_LIFE_CLASS)) exitWith {
+	[BLUFOR, 1] call BIS_fnc_respawnTickets;
+	};
