@@ -12,6 +12,7 @@
 #define MORTAR_ICON "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\mortar_ca.paa"
 #define SUPPLY_DROP_ICON "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa"
 #define TRANSPORT_ICON "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\transport_ca.paa"
+#define EXTRA_LIFE_ICON "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\defend_ca.paa"
 
 /*
     This master function for supports is used as go between for error cases such as when
@@ -211,7 +212,16 @@ class SUPPLY_ARSENAL_DROP_CLASS : basicSupport_baseClass
     expression = CALL_SUPPORT_MASTER(SUPPLY_ARSENAL_DROP_CLASS);
     icon = SUPPLY_DROP_ICON;
 };
+// supply - extra life
+class EXTRA_LIFE_CLASS : basicSupport_baseClass
+{
+	price = 60000;
+	category = SUPPLY_CATEGORY;
 
+	text = EXTRA_LIFE_TEXT;
+    expression = CALL_SUPPORT_MASTER(EXTRA_LIFE_CLASS);
+    icon = EXTRA_LIFE_ICON;
+};
 
 // CAS
 class CAS_GUN_RUN_CLASS : basicSupport_baseClass
