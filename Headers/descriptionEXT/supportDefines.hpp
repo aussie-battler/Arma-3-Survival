@@ -49,6 +49,9 @@
 // Arsenal drop
 #define SUPPLY_ARSENAL_DROP_CLASS supplyDropArsenal_commMenu
 #define SUPPLY_ARSENAL_DROP_TEXT "Arsenal Box Drop (5 Min Before Self Destruct)"
+// Extra Life
+#define EXTRA_LIFE_CLASS extraLife_commMenu
+#define EXTRA_LIFE_TEXT "Buy 1 Extra Life for everyone"
 // Daisy Cutter
 #define DAISY_CUTTER_CLASS daisyCutter_commMenu
 #define DAISY_CUTTER_TEXT "Daisy Cutter (40m)"
