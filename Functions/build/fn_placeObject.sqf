@@ -72,5 +72,8 @@ call BLWK_fnc_removePickedUpObjectActions;
 
 [_object,_snapToSurface] call BLWK_fnc_buildEvent_onPlaced;
 
+[BLWK_zeus, [[_object], true]] remoteExec ["addCuratorEditableObjects", 0, true];
+sleep 0.1;
+[[_object], 'Functions\AI Pathing\solidObject.sqf'] remoteExec ['execVM', 2];
 
 true
